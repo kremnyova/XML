@@ -2,7 +2,10 @@
   <title>Block 'Your result': button 'Learn more' is inactive</title>
   <priority>medium</priority>
   <enviroment>Win 10, Chrome 99.0.4844.51</enviroment>
-  <steps_to_reproduce>1. Open a non-existanse page 2. Click to 'Learn more' button</steps_to_reproduce>
+  <steps_to_reproduce>
+	  <1>Open a non-existanse page</1> 
+          <2>Click to 'Learn more' button</2>
+  </steps_to_reproduce>
   <expected_result> redirect to another non-existanse page</expected_result>
   <actual_result> nothing happend when click a button</actual_result>
 </bug_report>
