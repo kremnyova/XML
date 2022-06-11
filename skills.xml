@@ -1,0 +1,7 @@
+<skills>
+	<git>Terminal/GitBash</git>
+	<web> API, Client-server model, HTTP requests/responces, DevTools </web>
+	<theory>documentation, bug-reports, methods of testing, SDLC, STLC</theory>
+	<mobile>XCode, Android studio, guidelines</mobile>
+	<databases>SQL, Postgres</databases>
+</skills>
