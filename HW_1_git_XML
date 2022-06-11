@@ -1,0 +1,89 @@
+ 21. Создать внешний репозиторий c названием XML.
+ curl -u 'kremnyova:токен' https://api.github.com/user/repos -d '{"name":"XML"}'
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+git clone https://github.com/kremnyova/XML
+
+ 23. Внутри локального XML создать файл “new.xml”.
+touch XML/new.xml
+
+ 24. Добавить файл под гит.
+git add new.xml
+
+ 25. Закоммитить файл.
+git commit -m new.xml "add a xml file"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+vim new.xml
+i
+<about>
+        <full_name>Kremnyova Kristina Dmitrievna</full_name>
+        <age>23</age>
+        <count_of_pets>0</count_of_pets>
+        <future_salary>60.000</future_salary>
+</about>
+esc
+:wq
+
+ 28. Отправить изменения на внешний репозиторий.
+git commit -a -m "update new.xml"
+git push
+
+ 29. Создать файл preferences.xml
+vim preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+i
+<preferences>
+        <fav_movie>Clockwork Orange</fav_movie>
+        <fav_TV>Doctor Who</fav_TV>
+        <fav_food>Everything with lot of meat</fav_food>
+        <fav_season>Autumn</fav_season>
+        <country_i_would_like_to_visit>Ireland</country_i_would_like_to_wisit>
+</preferences>
+esc
+:wq
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+vim skills.xml
+i
+<skills>
+        <git>Terminal/GitBash</git>
+        <web> API, Client-server model, HTTP requests/responces, DevTools </web>
+        <theory>documentation, bug-reports, methods of testing, SDLC, STLC</theory>
+        <mobile>XCode, Android studio, guidelines</mobile>
+        <databases>SQL, Postgres</databases>
+</skills>
+esc
+:wq
+
+ 32. Сделать коммит в одну строку.
+$ git add . && git commit -am "commit in one string"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+add file -> create new file
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+commit new file
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+ <bug_report>
+  <title>Block 'Your result': button 'Learn more' is inactive</title>
+  <priority>medium</priority>
+  <enviroment>Win 10, Chrome 99.0.4844.51</enviroment>
+  <steps_to_reproduce>1. Open a non-existanse page 2. Click to 'Learn more' button</steps_to_reproduce>
+<expected_result> redirect to another non-existanse page</expected_result>
+  <actual_result> nothing happend when click a button</actual_result>
+</bug_report>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Кликнуть на commit changes
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+git pull
